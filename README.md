@@ -29,4 +29,4 @@ O layout inclui:
  ┗ 📂 img          → (Opcional) ícones das ferramentas/tecnologias
 
  ## 📷 Prévia do Projeto
- <img src= >  
+ <img src= "img\Captura de tela 2025-09-03 201942.png" alt= "Imagem prévia do projeto">
