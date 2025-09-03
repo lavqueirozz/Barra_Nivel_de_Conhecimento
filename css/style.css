@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Eu coloco display flex no body para quando eu colocar display flex na DIV pai ele estar centralizado.
+
+Porque se eu não display flex no body quando eu for colocar na DIV pai ele até vai ficar centralizado porem só no canto da tela.
+*/
+body{
+    height: 100vh;
+    display:flex; /*Organiza os elementos em fila na horizontal*/
+    justify-content:center; /* Organiza a fila */
+    align-items:center;
+    background-image: url(../img/codificacao-de-programa-de-computador-na-tela.jpg);
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.container .skills{
+    width: 100%;
+    margin: 25px 0;
+}
+.skills .titulo{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.skills .barra{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;       
+    background: rgba(0, 0, 0, 0.1);
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    } 
+}
+
+.barra .skills-por{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    background: #4070f4;
+}
+
+.barra #PY{
+    width: 100%;
+    animation-delay: 0.1s;
+}
+
+.barra #ML{
+    width: 100%;
+    animation-delay: 0.2s;
+}
+
+.barra #HTML{
+    animation-delay: 0.3s;
+    width: 80%;
+}
+
+.barra #CSS{
+    width: 70%;
+    animation-delay: 0.4s;
+}
+
+.barra #comunicacao{
+    width: 90%;
+    animation-delay: 0.5s;
+}
+
+.skills-por .porcentagem{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px;
+    background: #4070f4;
+    border-radius: 3px;
+    z-index: 1;
+}
+.porcentagem::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    background-color: #4070f4;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1; /* coloca um elemento sob outro elemento */
+}
+
+.usuaria .nome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size:30px ;
+}
+
+.usuaria .profissao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(87, 87, 87);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+
